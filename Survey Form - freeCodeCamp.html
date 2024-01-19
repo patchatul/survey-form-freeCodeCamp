@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+   <meta charset="UTF-8">
+   <title> Build a survey form</title>
+   <link rel="stylesheet" href="Survey Form - freeCodeCamp.css">
+  </head>
+  <body> 
+      <h1 id="title"> Survey form </h1>
+      <p id="description"> This is my first survey form. </p>
+      <form id="survey-form"> 
+      <fieldset> <!--ชื่อ-->
+        <label id="name-label"> Name: 
+        <input type="text" id="name"  required placeholder="John Doe"> </input></label><br>
+        <label id="email-label"> Email:
+        <input type="email" id="email" required placeholder="abc@gmail.com"> </input></label><br>
+        <label id="number-label"> Age: 
+          <input id="number" type="number" placeholder="20" min="1" max="100"> </input></label><br>
+      </fieldset>
+      <fieldset> <!--checkbox-->
+        <h3> Which programming language have you learned? </h3> 
+          <input type="checkbox" value="HTML"> HTML </input>
+          <input type="checkbox" value="CSS"> CSS </input>
+          <input type="checkbox" value="JavaScript"> JavaScript </input>
+          <input type="checkbox" value="C"> C </input>
+    </fieldset>
+
+    <fieldset> <!--radioกลมๆ-->
+      <h3> What is your favorite programming language? </h3> 
+      <input type="radio" name="HTML-CSS-JavaScript-C" value="HTML"> HTML </input>
+      <input type="radio" name="HTML-CSS-JavaScript-C" value="CSS"> CSS </input>
+      <input type="radio" name="HTML-CSS-JavaScript-C"  value="JavaScript"> JavaScript </input>
+      <input type="radio" name="HTML-CSS-JavaScript-C"  value="C"> C </input>
+    </fieldset>
+
+    <fieldset>
+      <h3> What is your level of programming? </h3> 
+      <input type="radio" name="beginner-intermediate-advanced" value="beginner"> Beginner </input>
+      <input type="radio" name="beginner-intermediate-advanced" value="intermediate"> Intermediate </input>
+      <input type="radio" name="beginner-intermediate-advanced" value="Advanced"> Advanced </input>
+    </fieldset>
+
+  
+    <fieldset> <!--dropdown-->
+      <h3> What is your favorite website for leraning new programming language? </h3> 
+      <select id="dropdown">
+        <option value=""> (Select an option)</option>
+        <option value="1"> w3schools.com</option>
+        <option value="2"> freecodecamp.org </option>
+        <option value="3"> wbi.ohonline.in.th/cp/unit5_1.html</option>
+        <select>
+    </fieldset>
+
+    <fieldset> 
+      <h3> What project do you want to do next?</h3>
+      <textarea> calendar... </textarea>
+    </fieldset>
+    <button type="submit" id="submit">SUBMIT</button> 
+  </form>
+  </body>
+</html>
