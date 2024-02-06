@@ -1,0 +1,65 @@
+* {
+  font-size: 18px;
+  background-color: lightgreen;
+
+}
+
+#h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow-x: hidden;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  padding: 5px;
+}
+
+.nav-link {
+  display: block;
+  padding: 10px;
+  border-bottom: solid white 2px;
+  word-break: break-all;
+}
+
+.nav-link:hover {
+  color: green;
+}
+
+.nav-link:visited {
+  color: brown;
+}
+
+header {
+  border: solid 2px black;
+  margin: 20px 4px 4px 4px;
+  border-collapse: collapse;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+code {
+  font-size: initial;
+}
+
+body:not(#navbar) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75%;
+  height: 100%;
+
+}
+
+@media only screen and (min-width:200px) {
+  * {
+    font-size: 18px;
+
+  }
+}

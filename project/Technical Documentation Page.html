@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="uft-8">
+  <link rel="stylesheet" href="Technical Documentation Page.css">
+</head>
+
+<body>
+  <main id="main-doc">
+    <h1 id="h1"> CSS </h1>
+    <!--1-->
+    <section class="main-section" id="What_is_CSS?">
+      <header id="CSS_what">What is CSS?</header>
+      <ul>
+        <li>CSS stands for Cascading Style Sheets.</li>
+        <li>CSS describes how HTML displays on screen or other media.</li>
+      </ul>
+    </section>
+    <!--2-->
+    <section class="main-section" id="How_do_you_use_CSS_with_HTML?">
+      <header id="CSS_HTML">How do you use CSS with HTML?</header>
+      <p class="p-insert">There are three ways of inserting a style sheet of CSS into HTML page.</p>
+      <ol>
+        <li class="li-insert">External CSS <br>
+          :can be written in any text editor, and must be saved with a .css extension<br>
+          Each HTML page must include a reference to the external style sheet file inside the
+          <code> link </code>
+          element, inside the head section.<br>
+          <pre>
+        <code> h1 {
+    color: maroon;
+    }</code></pre>
+        </li>
+        <li class="li-insert">Internal CSS<br>
+          : is defined inside the <code> style </code>element, inside the head section..<br>
+          <pre><code>   style h1 {
+    color: maroon;
+    }</code></pre>
+        </li>
+        <li class="li-insert">Inline CSS<br>
+          :apply a unique style for a single element.<br>
+          <code> h1 style="color:maroon;"></code>
+        </li>
+      </ol>
+      <!--3-->
+      <section class="main-section" id="How_does_CSS_syntax_look_like?">
+        <header id="CSS_look">How does CSS syntax look like?</header>
+        <code class="code-syntax-look">selector {
+      property name:value;
+      }</code>
+        <ul>
+          <li><code class="code-syntax">body {
+         background-color: lightblue;
+         }</code></li>
+          <li><code class="code-syntax">p {
+          color: red;
+          text-align: center;
+        }</code></li>
+          <li><code class="code-syntax">.header p {
+          font-family: verdana;
+          font-size: 20px;
+        }</code></li>
+        </ul>
+        <p class="li-syntax">don't forget<br>
+          opening and closing curly braces {} after selector<br>
+          inside of curly braces, there are property name follows by colon : then value and ends with semicolon;</p>
+      </section>
+      <!--4-->
+      <section class="main-section" id="What_can_CSS_style_your_HTML_page?">
+        <header>What can CSS style your HTML page?</header>
+        <p class="p-style"> </p>
+        <code class="code-style"> </code>
+        <ul>
+          <li>color</li>
+          <li>font</li>
+          <li>background</li>
+          <li>border</li>
+          <li>form</li>
+          <li>navigation bar</li>
+          <li>website layout</li>
+          <li>size</li>
+          <li>media query</li>
+          <li>image</li>
+          <li>animation</li>
+          <li>table</li>
+          <li>column</li>
+          <li>other decorative features</li>
+        </ul>
+      </section>
+      <!--5-->
+      <section class="main-section" id="Why_CSS_is_important?">
+        <header id="CSS-important">Why CSS is important?</header>
+        <p class="p-important">Because CSS is responsive for the styles of your web pages</p>
+        <p class="p-important">For examples:</p>
+        <ul>
+          <li> design</li>
+          <li>layout</li>
+          <li>variations in display for different devices and screen size</li>
+        </ul>
+        <p class="p-important">CSS can make your website look prettier and easier to read.</p>
+        <p class="p-important"> It creates a great user experience.</p>
+      </section>
+      <!--6-->
+      <section class="main-section" id="Technical_Documentation">
+        <header id="TC">Technical Documentation</header>
+        <p>to describe (in technical language) the use, functionality, or architecture of a product, system, or service.
+        </p>
+        <p>remember that 51% of customers want to see a FAQs section on a website when making an online purchase.</p>
+      </section>
+      <!--NAv-->
+      <nav id="navbar">
+        <header id="CSS_reference">CSS Reference</header>
+        <a class="nav-link" href="#What_is_CSS?">What is CSS?</a>
+        <a class="nav-link" href="#How_do_you_use_CSS_with_HTML?">How do you use CSS with HTML?</a>
+        <a class="nav-link" href="#How_does_CSS_syntax_look_like?">How does CSS syntax look like?</a>
+        <a class="nav-link" href="#What_can_CSS_style_your_HTML_page?">What can CSS style your HTML page?</a>
+        <a class="nav-link" href="#Why_CSS_is_important?">Why CSS is important?</a>
+        <a class="nav-link" href="#Technical_Documentation">Technical Documentation</a>
+        <!--a link for every main sectionเชื่อมกัน-->
+      </nav>
+  </main>
+</body>
+
+</html>
